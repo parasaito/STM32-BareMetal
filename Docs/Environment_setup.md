@@ -47,7 +47,7 @@ Download the toolchain and extract/install into a directory of your choice (.pkg
 
 - Create an appropriate environment variable and add the bin directory to PATH
 
-```cpp
+```sh
 echo "export ARM32_TOOLCHAIN=/Path/to/Toolchain" >> $HOME/.bashrc
 echo "export PATH=$ARM32_TOOLCHAIN/bin:$PATH" >> $HOME/.bashrc
 source $HOME/.bashrc
@@ -55,7 +55,7 @@ source $HOME/.bashrc
 
 - Check the binaries
 
-```cpp
+```sh
 arm-none-eabi-gcc --version
 ```
 
@@ -63,19 +63,19 @@ arm-none-eabi-gcc --version
 
 Debian/Ubuntu systems :
 
-```cpp
+```sh
 sudo apt install make openocd bear clangd
 ```
 
 Fedora/RHEL based systems :
 
-```cpp
+```sh
 sudo dnf install make openocd bear clang-tools-extra
 ```
 
 Arch Linux :
 
-```cpp
+```sh
 sudo pacman install make openocd bear clangd
 ```
 
@@ -93,13 +93,13 @@ clangd and make will be installed automatically with XCode installation or comma
 
 Homebrew :
 
-```cpp
+```sh
 brew install open-ocd bear
 ```
 
 MacPorts :
 
-```cpp
+```sh
 sudo port install openocd bear
 ```
 
